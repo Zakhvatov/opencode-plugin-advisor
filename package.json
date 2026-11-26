@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "opencode-plugin-advisor",
+  "version": "0.1.0",
+  "description": "A second model watching every turn of an OpenCode session, with read-only tools and inline advisory notes. Port of the oh-my-pi advisor.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zakhvatov/opencode-plugin-advisor.git"
+  },
+  "homepage": "https://github.com/Zakhvatov/opencode-plugin-advisor#readme",
+  "bugs": {
+    "url": "https://github.com/Zakhvatov/opencode-plugin-advisor/issues"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "advisor",
+    "reviewer",
+    "watchdog",
+    "ai-agent"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "bun test",
+    "check": "bun run typecheck && bun test"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "bun-types": "latest",
+    "typescript": "^5.9.0"
+  },
+  "dependencies": {
+    "@opencode/plugin": "^2.4.2"
+  }
+}
