@@ -1,5 +1,7 @@
 # opencode-plugin-advisor
 
+[English](README.md) · [Русский](README.ru.md)
+
 A second model watching every turn of an [OpenCode](https://opencode.ai) session.
 
 The advisor reads the primary agent's transcript delta, checks the repository with read-only tools, and injects concise `<advisory>` notes back into the primary session. It is a port of the advisor subsystem in [oh-my-pi](https://github.com/can1357/oh-my-pi) (`WATCHDOG.md`, `WATCHDOG.yml`, the `advise` tool, severity routing, and the emission guard) to the OpenCode V2 plugin API.
